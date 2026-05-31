@@ -1,116 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahnoor Fatima | Portfolio</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahnoor Fatima — Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Mahnoor Fatima</h1>
-      <p class="lead">Information Management Student | Web Developer | WordPress | SEO Enthusiast</p>
-    </div>
-  </header>
-
-  <!-- About Me -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">About Me</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <p>
-            I'm Mahnoor Fatima, a passionate and detail-oriented Information Management student at the University of the Punjab, Lahore.
-            With a growing interest in front-end and full-stack development, I specialize in creating responsive websites using HTML, CSS, JavaScript, and Bootstrap, and have experience with PHP, Laravel, and MySQL.
-            My academic journey is complemented by hands-on training and real-world projects, including a full-stack Twitter clone. I'm currently looking for internship or part-time roles where I can grow, contribute, and collaborate meaningfully.
-          </p>
-          <ul>
-            <li>🎓 BS Information Management (2023–2027), University of the Punjab, Lahore</li>
-            <li>💼 Career Objective: Apply academic learning in real-world roles and build strong professional skills</li>
-            <li>🧠 Skills: HTML5, CSS3, JavaScript, Bootstrap, jQuery, WordPress, PHP (basic), Laravel (basic), MySQL (basic)</li>
-            <li>📂 Tools: Microsoft Office, Internet Research, Time Management, Teamwork</li>
-            <li>🧾 Certifications: E-Hunar Full Stack Development (6 months), W3Schools Courses</li>
-            <li>📍 Location: Lahore, Pakistan</li>
-            <li>📧 Email: <a href="mailto:iammahnoorrai@gmail.com">iammahnoorrai@gmail.com</a></li>
-            <li>📞 Phone: +92 325 5941941</li>
-          </ul>
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-logo">Mahnoor<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="mailto:iammahnoorrai@gmail.com" class="nav-cta">Hire Me</a>
+            <div class="hamburger"><span></span><span></span><span></span></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Projects -->
-  <section id="projects" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Website</h5>
-              <p class="card-text">Responsive personal portfolio using HTML, CSS, JavaScript, and Bootstrap.</p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-text-wrap">
+                <div class="hero-tag">Available for Internships & Part-time Roles</div>
+                <h1>Hi, I'm Mahnoor<br><em>Full Stack</em> Web Developer</h1>
+                <p class="hero-sub">Information Management student at University of the Punjab, passionate about
+                    building clean, responsive, and functional web applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-outline">Get In Touch</a>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">E-Commerce Product Page (Mockup)</h5>
-              <p class="card-text">Designed product layout with JavaScript-based interaction.</p>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hc-avatar">MF</div>
+                    <div class="hc-name">Mahnoor Fatima</div>
+                    <div class="hc-role">Aspiring Full Stack Developer</div>
+                    <div class="hc-skills">
+                        <span class="skill-chip">HTML5</span>
+                        <span class="skill-chip">CSS3</span>
+                        <span class="skill-chip">JavaScript</span>
+                        <span class="skill-chip">PHP</span>
+                        <span class="skill-chip">Laravel</span>
+                        <span class="skill-chip">MySQL</span>
+                        <span class="skill-chip">Bootstrap</span>
+                        <span class="skill-chip">WordPress</span>
+                    </div>
+                    <div class="hc-stat-row">
+                        <div class="hc-stat">
+                            <div class="n">3+</div>
+                            <div class="l">Projects Built</div>
+                        </div>
+                        <div class="hc-stat">
+                            <div class="n">6mo</div>
+                            <div class="l">Training Program</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Twitter Clone (Final Project)</h5>
-              <p class="card-text">Full-stack clone built using PHP, Laravel, and MySQL (as part of E-Hunar).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Your name">
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-label">About Me</div>
+                    <h2 class="section-title">A developer who loves building things for the web</h2>
+                    <p>I'm a second-year Information Management student at the University of the Punjab (Class of 2027),
+                        with a deep passion for web development and digital technology.</p>
+                    <p>I completed a 6-month Full Stack Web Development program under the E-Hunar initiative, where I
+                        built skills across the entire web development stack — from HTML & CSS to PHP, Laravel, and
+                        MySQL — finishing with a fully functional Twitter Clone as my capstone project.</p>
+                    <p>I'm a fast learner, detail-oriented, and always eager to take on new challenges in professional
+                        settings.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <div class="key">Location</div>
+                            <div class="val">Lahore, Pakistan</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">Degree</div>
+                            <div class="val">BS Information Management</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">University</div>
+                            <div class="val">University of the Punjab</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">Graduation</div>
+                            <div class="val">August 2027</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="edu-card">
+                        <div class="inst">University of the Punjab</div>
+                        <div class="deg">BS Information Management</div>
+                        <div class="yr">Aug 2023 – Aug 2027</div>
+                    </div>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-dot"></div>
+                            <div class="cert-text">Full Stack Web Development — E-Hunar Program (6 Months)</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-dot"></div>
+                            <div class="cert-text">HTML, CSS, JavaScript — W3Schools Certified</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-dot"></div>
+                            <div class="cert-text">Bootstrap — W3Schools Certified</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-dot"></div>
+                            <div class="cert-text">WordPress CMS & API Integration</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-dot"></div>
+                            <div class="cert-text">Mentorship Program — University of the Punjab (IIM)</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control" placeholder="Your email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" rows="4" class="form-control" placeholder="Your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <small>© 2025 Mahnoor Fatima. All rights reserved.</small>
-  </footer>
+    <!-- SKILLS -->
+    <section class="section skills-bg" id="skills">
+        <div class="section-inner">
+            <div class="section-label">What I Know</div>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <div class="skill-cat-icon">🎨</div>
+                    <div class="skill-cat-title">Frontend Development</div>
+                    <div class="skill-bars">
+                        <div>
+                            <div class="sbar-label"><span>HTML5 / CSS3</span><span>90%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>JavaScript</span><span>75%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>Bootstrap</span><span>85%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>jQuery</span><span>70%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <div class="skill-cat-icon">⚙️</div>
+                    <div class="skill-cat-title">Backend & Database</div>
+                    <div class="skill-bars">
+                        <div>
+                            <div class="sbar-label"><span>PHP</span><span>75%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>Laravel</span><span>70%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>MySQL</span><span>72%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:72%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>C# / .NET</span><span>45%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <div class="skill-cat-icon">🌐</div>
+                    <div class="skill-cat-title">CMS & Tools</div>
+                    <div class="skill-bars">
+                        <div>
+                            <div class="sbar-label"><span>WordPress</span><span>80%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>MS Office</span><span>85%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbar-label"><span>SPSS</span><span>65%</span></div>
+                            <div class="sbar-track">
+                                <div class="sbar-fill" style="width:65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Bootstrap JS -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <div class="section-label">My Work</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="proj-card">
+                    <div class="proj-thumb blue">🌐</div>
+                    <div class="proj-body">
+                        <div class="proj-tags"><span class="proj-tag">HTML5</span><span
+                                class="proj-tag">CSS3</span><span class="proj-tag">Bootstrap</span><span
+                                class="proj-tag">JavaScript</span></div>
+                        <div class="proj-name">Responsive Portfolio Website</div>
+                        <p class="proj-desc">A fully responsive personal portfolio website built with HTML, CSS,
+                            Bootstrap and JavaScript. Features smooth scrolling, skill bars, and a clean contact
+                            section.</p>
+                        <a href="#" class="proj-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-thumb teal">🛒</div>
+                    <div class="proj-body">
+                        <div class="proj-tags"><span class="proj-tag">HTML5</span><span
+                                class="proj-tag">CSS3</span><span class="proj-tag">JavaScript</span><span
+                                class="proj-tag">Bootstrap</span></div>
+                        <div class="proj-name">E-Commerce Product Page</div>
+                        <p class="proj-desc">A modern e-commerce product page with image gallery, product details, size
+                            selector, cart interaction, and responsive layout across all devices.</p>
+                        <a href="#" class="proj-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-thumb indigo">🐦</div>
+                    <div class="proj-body">
+                        <div class="proj-tags"><span class="proj-tag">PHP</span><span
+                                class="proj-tag">Laravel</span><span class="proj-tag">MySQL</span><span
+                                class="proj-tag">Bootstrap</span></div>
+                        <div class="proj-name">Twitter Clone</div>
+                        <p class="proj-desc">A full-stack Twitter clone built as my E-Hunar capstone project. Features
+                            user authentication, tweet posting, feed display, and a MySQL database managed via Laravel
+                            Eloquent ORM.</p>
+                        <a href="#" class="proj-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-bg" id="contact">
+        <div class="section-inner contact-inner">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-sub">I'm currently open to internships, part-time roles, and freelance web development
+                projects. Feel free to reach out!</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="cc-label">Email</div>
+                    <div class="cc-val"><a href="mailto:iammahnoorrai@gmail.com">iammahnoorrai@gmail.com</a></div>
+                </div>
+                <div class="contact-card">
+                    <div class="cc-label">LinkedIn</div>
+                    <div class="cc-val"><a href="https://www.linkedin.com/in/mahnoor-rai-629a1329a/"
+                            target="_blank">mahnoor-rai</a></div>
+                </div>
+                <div class="contact-card">
+                    <div class="cc-label">Location</div>
+                    <div class="cc-val">Lahore, Pakistan</div>
+                </div>
+            </div>
+            <a href="mailto:iammahnoorrai@gmail.com" class="btn-primary">Send Me an Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 <span>Mahnoor Fatima</span>. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            const links = document.querySelector('.nav-links');
+            const cta = document.querySelector('.nav-cta');
+            if (links.style.display === 'flex') { links.style.display = ''; cta.style.display = ''; }
+            else { links.style.display = 'flex'; links.style.flexDirection = 'column'; links.style.position = 'absolute'; links.style.top = '64px'; links.style.left = '0'; links.style.right = '0'; links.style.background = 'white'; links.style.padding = '1rem 5%'; links.style.borderBottom = '1px solid #e2e8f0'; cta.style.display = 'none'; }
+        });
+    </script>
 </body>
+
 </html>
